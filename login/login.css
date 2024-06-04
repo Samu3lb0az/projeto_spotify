@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#logo_spot{
+    width: 90px;
+
+}
+.box{
+    margin-left: 25%;
+    margin-top: 60px;
+    background-color: black;
+    color: white;
+    width: 800px;
+    height: 600px;
+    border-radius: 10px;
+}
