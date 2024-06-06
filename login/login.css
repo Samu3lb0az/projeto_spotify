@@ -1,17 +1,81 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-#logo_spot{
-    width: 90px;
-
-}
-.box{
-    margin-left: 25%;
-    margin-top: 60px;
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: black;
+    margin-top: 200px;
+}
+
+.cabeca {
+    text-align: center;
+    margin-bottom: 20px;
     color: white;
-    width: 800px;
-    height: 600px;
-    border-radius: 10px;
+}
+
+#logo_spot {
+    width: 80px;
+    height: auto;
+}
+h1{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.oform {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.lembrar-titulo {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.lembrar-inputs {
+    display: inline-block;
+}
+
+.radio {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.label-radio {
+    display: inline-block;
+    margin-right: 15px;
+}
+#email, #senha{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: black;
+    border: 1px solid white;
 }
