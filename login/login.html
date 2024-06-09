@@ -3,33 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Teste</title>
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div class="container">
-        <div class="cabeca">
-            <img id="logo_spot" src="../imags/img_spotify2.png" alt="Imagem do Spotify">
-            <h1>Entrar no Spotify</h1>
+
+    <section>
+        <div class="main">
+
+            <div class="logo-container">
+                <img id="logo" src="../imags/img_spotify2.png" alt="">
+            </div>
+            <h1>Entar no Spotify</h1>
+
+            <div class="account-connect">
+                <button class="a-c-btn" id="g"><img src="../imags/img_google.png"><span>Continuar com o Google</span></button>
+                <button class="a-c-btn" id="f"><img src="../imags/img_face.png"><span>Continuar com o Facebook</span></button>
+                <button class="a-c-btn" id="a"><img src="../imags/img_apple.png"><span>Continuar com a Apple</span></button>
+                <button class="a-c-btn" id="n"><span>Continuar com um número de telefone</span></button>
+            </div>
+            
+            <hr>
+
+            <div class="log-in">
+                <form>
+                    <label>E-mail ou nome de usuário</label>
+                    <input type="text" placeholder="E-mail ou nome de usuário">
+
+                    <label>Senha</label>
+                    <input type="password" placeholder="Senha">
+
+
+                    <div class="switch">
+                        <input type="checkbox" id="switch" checked>
+                        <label for="switch"></label>
+                        <span>Lembrar de mim</span>
+                    </div>
+
+                    <button>Entrar</button>
+
+                    <a href="#">Esqueceu sua senha?</a>
+
+
+                </form>
+            </div>
+
         </div>
-        <div class="oform">
-            <form>
-                <label for="primeiro">E-mail ou nome do usuário</label><br>
-                <input type="text" id="email" placeholder="E-mail ou nome de usuário"><br><br>
-                <label for="segundo">Senha</label><br>
-                <input type="password" id="senha" placeholder="Senha"><br><br>
-               
-                <h2>Lembrar de mim</h2>
-               
-                <input type="radio" name="lembrar" id="lembrarsim" value="sim">
-               
-                <label for="lembrarSim">Sim</label><br>
-               
-                <input type="radio" name="lembrar" id="lembrarnao" value="nao">
-               
-                <label for="lembrarNao">Não</label><br>
-            </form>
-        </div>
-    </div>
+    </section>
+    
 </body>
 </html>

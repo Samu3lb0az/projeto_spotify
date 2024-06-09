@@ -2,80 +2,194 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
-.container {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    background: linear-gradient(rgba(11, 0, 1, 0.8) 0%, rgba(0, 0, 0) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    margin: 32px 0;
+    padding: 32px;
+    width: 734px;
+    height: 590px;
+    background: #000;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: black;
-    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.cabeca {
-    text-align: center;
-    margin-bottom: 20px;
-    color: white;
-}
-
-#logo_spot {
-    width: 80px;
-    height: auto;
-}
-h1{
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-h2{
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.oform {
-    text-align: center;
-    color: white;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.input {
+.logo-container {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 16px 0;
 }
 
-.lembrar-titulo {
+#logo {
+    width: 80px;
+}
+section div.main{
+    margin: 32px 0;
+    padding: 32px;
+    width: 734px;
+    height: 910px;
+    background: #000;
+    border-radius: 5px;
+}
+section div.main h1{
+    text-align: center;
+    margin: 48px 0;
+    color: white;
+    font-size: 48px;
+
+}
+section div.main .account-connect{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+section div.main .account-connect button{
+    width: 324px;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    margin: 5px 0;
+    border-radius: 500px;
+    color: white;
+    background: transparent;
+    border: 1px solid #878787;
+    font-size: 15px;
     font-weight: bold;
-    margin-bottom: 10px;
+}
+section div.main .account-connect button img{
+    width: 23px;
+    float: left;
+    margin: 0 10px;
+}
+section div.main .account-connect button span{
+    position: relative;
+    top: 3px;
+}
+section div.main hr{
+    width: 600px;
+    margin: 32px 100px;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    border-image: initial;
+    border-top: 1px solid rgb(41, 41, 41);
 }
 
-.lembrar-inputs {
+section div.main .log-in{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+section div.main .log-in form label{
+    color: white;
+    font-size: 14px;
+    margin-bottom: 8px;
     display: inline-block;
+}
+section div.main .log-in form input{
+    display: block;
+    padding: 14px;
+    width: 324px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    background: rgb(18, 18, 18);
+    outline: none;
+    border: none;
+    appearance: none;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 1px #878787;
+    color: white;
 }
 
-.radio {
-    display: inline-block;
-    margin-right: 5px;
+.switch{
+    margin: 0;
+    padding: 0;
+}
+.switch input[type=checked]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+.switch label{
+    margin: 10px 0 20px 0;
+    cursor: pointer;
+    padding: 3px;
+    width: 32px;
+    height: 16px;
+    background: #727272;
+    display: block;
+    border-radius: 50em;
+    position: relative;
+    transition: .1s;
+    box-sizing: border-box;
+}
+.switch label::after{
+    content: '';
+    position: absolute;
+    width: 11px;
+    height: 10px;
+    background: #000;
+    border-radius: 50em;
+    transition: .1s;
+}
+.switch input:active+label{
+    background-color: #727272;
+}
+.switch input:checked+label{
+    background: #1ed760;
+}
+.switch input:checked+label::after{
+    transform: translateX(calc(100% + 5px));
+}
+input#switch{
+    display: none;
+}
+.switch span{
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    position: relative;
+    left: 7px;
+    bottom: 11px;
 }
 
-.label-radio {
-    display: inline-block;
-    margin-right: 15px;
+section div.main .log-in button{
+    background-color: #1ed760;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 8px 32px;
+    height: 48px;
+    width: 324px;
+    letter-spacing: .4px;
+    font-size: 16px;
+    margin: 20px 0;
 }
-#email, #senha{
-    width: 300px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: black;
-    border: 1px solid white;
+section div.main .log-in a{
+    display: block;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    text-decoration: underline;
 }
+
+
